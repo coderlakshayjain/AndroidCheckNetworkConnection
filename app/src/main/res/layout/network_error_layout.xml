@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/errorImg"
+        android:src="@drawable/ic_network_check"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNetworkError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/errorImg"
+        android:layout_centerHorizontal="true"
+        android:text="Netwrok Error"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNetworkError"
+        android:layout_centerHorizontal="true"
+        android:text="Please Check Your Internet Connection"
+        android:textSize="15sp" />
+
+</RelativeLayout>
